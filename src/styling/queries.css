@@ -1,97 +1,101 @@
-body,
-html {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-  font-family: Georgia, "Times New Roman", Times, serif;
+@media only screen and (max-width: 75em) {
+  /* Project Overview */
+  .container {
+    padding: 1rem 2rem;
+  }
+
+  .proj-title {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .proj-desc p {
+    font-size: 0.9rem;
+    padding-right: 2rem;
+  }
+
+  .prj-btn {
+    padding-top: 1.5rem;
+  }
 }
 
-:root {
-  --primary-color: rgb(4, 255, 0);
-  --secondary-color: rgb(4, 126, 2);
-  --button-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  --text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+@media only screen and (max-width: 65em) {
 }
 
-/* GENERAL STYLES */
-
-h1 {
-  font-size: 5rem;
-  line-height: 5.5rem;
-  padding: 4rem 0;
-  text-align: center;
+@media only screen and (max-width: 48em) {
 }
 
-h2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  padding: 3rem 0;
+@media (max-width: 36em) {
+  section {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+    line-height: 6.5rem;
+    padding: 1rem 0 0.2rem;
+  }
+
+  h1 .name {
+    color: var(--secondary-color);
+    letter-spacing: -5px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding: 3rem 0;
+  }
+
+  .hero h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    padding: 5rem 0 1rem;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    width: 20rem;
+  }
+
+  .cta-btn .btn-cstm-outline {
+    display: none;
+  }
+
+  /* Project Overview */
+  .container {
+    padding: 1rem 2rem;
+  }
+
+  .proj-preview {
+    padding: 4rem 1rem 5rem;
+  }
+
+  .proj-title {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .proj-desc p {
+    font-size: 0.9rem;
+    padding-right: 2rem;
+  }
+
+  .prj-btn {
+    padding-top: 1.5rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 3rem;
+  }
+  footer .logo {
+    width: 7rem;
+  }
 }
 
-a {
-  display: inline-block;
-  color: var(--primary-color);
-  padding: 0.3rem;
-  text-decoration: none;
-}
-a:visited {
-  color: var(--secondary-color);
-}
-a:hover {
-  color: var(--primary-color);
-}
-
-p {
-  justify-content: right;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0.5rem;
-  overflow: hidden;
-  text-align: center;
-}
-
-section {
-  padding: 4rem;
-}
-
-/* HOME */
-section .hero {
-}
-
-nav {
-  background-color: rgb(0, 0, 0);
-}
-
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: var(--primary-color);
-  padding: 0.9rem 1.25rem;
-  text-decoration: none;
-}
-
-button {
-  padding: 0.1rem 0.5rem;
-  border-radius: 1.25rem;
-}
-
-/* ABOUT */
-
-/* PROJECTS */
-.project-overview {
-  display: flex;
-  gap: 4.5rem;
-  justify-content: space-around;
-}
-.proj-details {
-  background-color: beige;
-  flex: 1;
-  padding: 1rem;
-  box-shadow: var(--button-shadow);
+@media only screen and (max-width: 30em) {
 }
