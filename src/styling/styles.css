@@ -131,10 +131,10 @@ nav {
   box-shadow: 6px 6px 0 0 var(--black);
   box-sizing: border-box;
   display: flex;
-  font-size: 16px;
-  height: 48px;
+  font-size: 1.3rem;
+  height: 3rem;
   justify-content: center;
-  line-height: 24px;
+  line-height: 1.5rem;
   max-width: 100%;
   padding: 1.2rem 3rem;
   position: relative;
@@ -168,12 +168,12 @@ nav {
 }
 
 .proj-desc {
-  padding: 2rem;
+  padding: 2rem 2.5rem;
 }
 
 .proj-title {
   font-weight: 900;
-  padding-bottom: 2.5rem;
+  padding: 0 0 2.5rem;
   margin-left: 0;
   text-align: left;
   width: 20rem;
@@ -181,27 +181,33 @@ nav {
 
 .img-fluid {
   border-right: solid 1.5px var(--black);
+  object-fit: cover;
+}
+
+.proj-desc h5 {
+  margin-bottom: 0.5rem;
 }
 
 .proj-desc p {
-  font-size: 1.2rem;
-  padding-right: 2rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  overflow: hidden;
+  max-height: 10rem; /* Adjusted max-height for 3 lines of text */
+  white-space: normal; /* Change white-space to normal */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  padding-right: 1rem;
 }
-
-.fe-stack ul {
-  padding-inline-start: 0;
-  text-align: left;
-}
-
-.fe-stack li {
-  display: inline-block;
-  font-size: 1.2rem;
-  margin: 0.5rem;
-  padding: 0.2rem 1rem;
+.fe-stack {
+  padding-top: 1rem;
+  padding-bottom: 0;
+  font-size: 1.3rem;
 }
 
 .prj-btn {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .prj-btn .btn-cstm-outline {
@@ -227,7 +233,7 @@ footer {
   border-top: 2px solid var(--black);
   background-color: var(--primary-color);
   justify-content: left;
-  padding-bottom: 2rem;
+  padding-bottom: 0;
 }
 
 .page-desc {
