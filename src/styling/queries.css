@@ -65,6 +65,11 @@
     display: none;
   }
 
+  /* Navigation */
+  nav ul {
+    text-align: left;
+  }
+
   /* Project Overview */
   .container {
     padding: 1rem 2rem;
@@ -90,10 +95,18 @@
 
   /* Footer */
   footer {
-    padding: 3rem;
+    padding: 2rem;
   }
   footer .logo {
     width: 7rem;
+  }
+
+  .page-desc {
+    font-size: 2rem;
+  }
+
+  footer p {
+    padding-top: 0.8rem;
   }
 }
 
