@@ -389,3 +389,31 @@ fieldset {
   opacity: 70%;
   margin: 0 auto;
 }
+
+/* PROJECTS PAGE */
+
+.project-set {
+  padding-top: 0;
+  padding-bottom: 5rem;
+}
+
+.project-set .row .project-img {
+  gap: 0;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-out;
+  border: solid 2px var(--black);
+}
+
+.project-set .img-fluid:hover {
+  transform: scale(1.1);
+}

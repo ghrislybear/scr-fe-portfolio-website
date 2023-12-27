@@ -170,6 +170,18 @@
     text-align: center;
     padding: 0 4rem;
   }
+
+  .test-gallery .row .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 0;
+  }
+
+  .note {
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    width: 18rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
