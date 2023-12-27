@@ -5,6 +5,7 @@
   --secondary-color: #bcb6ff;
   --black: #1e0c13;
   --white: #fbfffef8;
+  --minor-btn-bg: #eaffee;
   --bs-emphasis-color-rgb: #bcb6ff;
   --text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
     rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -147,7 +148,7 @@ nav {
   background-color: var(--primary-color);
 }
 .btn-cstm-outline {
-  background-color: #eaffee;
+  background-color: var(--minor-btn-bg);
 }
 
 .btn-custom:hover,
@@ -278,10 +279,14 @@ footer {
 
 /*CONTACT PAGE*/
 .form {
-  max-width: 400px;
+  max-width: 70rem;
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+.container-form {
+  padding-top: 0;
 }
 
 #contact input[type="text"],
@@ -290,26 +295,15 @@ footer {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+  font: 400 1rem/1.2rem "Inria Sans", sans-serif;
 }
 
 #contact {
-  background: #f9f9f9;
+  background: var(--minor-btn-bg);
+  border: 1px solid var(--black);
+  box-shadow: 6px 6px 0 0 var(--black);
   padding: 25px;
-  margin: 50px 0;
-}
-
-#contact h3 {
-  color: #f96;
-  display: block;
-  font-size: 30px;
-  font-weight: 400;
-}
-
-#contact h4 {
-  margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
+  margin: 0;
 }
 
 fieldset {
@@ -326,10 +320,10 @@ fieldset {
 #contact input[type="url"],
 #contact textarea {
   width: 100%;
-  border: 1px solid #ccc;
-  background: #fff;
-  margin: 0 0 5px;
-  padding: 10px;
+  border: 1px solid var(--black);
+  background: var(--white);
+  margin: 0 0 0.3rem;
+  padding: 0.9rem;
 }
 
 #contact input[type="text"]:hover,
@@ -340,7 +334,7 @@ fieldset {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+  border: 1px solid var(--black);
 }
 
 #contact textarea {
@@ -352,39 +346,46 @@ fieldset {
 #contact button[type="submit"] {
   cursor: pointer;
   width: 100%;
-  border: none;
-  background: #0cf;
-  color: #fff;
+  border: 1px solid var(--black);
+
+  background: var(--bs-emphasis-color-rgb);
+  color: var(--black);
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
 }
 
 #contact button[type="submit"]:hover {
-  background: #09c;
+  background: var(--bs-emphasis-color-rgb);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
 #contact button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: none;
 }
 
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
-  border: 1px solid #999;
+  border: 1px solid var(--black);
 }
 ::-webkit-input-placeholder {
-  color: #888;
+  color: var(--black);
 }
 :-moz-placeholder {
-  color: #888;
+  color: var(--black);
 }
 ::-moz-placeholder {
-  color: #888;
+  color: var(--black);
 }
 :-ms-input-placeholder {
-  color: #888;
+  color: var(--black);
+}
+
+.note {
+  width: 40rem;
+  opacity: 70%;
+  margin: 0 auto;
 }
