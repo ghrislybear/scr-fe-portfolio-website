@@ -285,6 +285,35 @@
     text-align: center;
     padding: 0 1rem;
   }
+
+  /* Blog Page */
+
+  .design-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+    padding-top: 3rem;
+    text-transform: uppercase;
+  }
+  .design p {
+    padding-top: 2rem;
+    width: 100%;
+    text-align: justify;
+  }
+
+  section .container-fluid {
+    padding: 0 1rem;
+  }
+
+  .card {
+    border: 1.5px solid var(--black);
+    border-radius: 0;
+    box-shadow: 6px 6px 0 0 var(--black);
+  }
+
+  .cards > .row {
+    row-gap: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 360px) {

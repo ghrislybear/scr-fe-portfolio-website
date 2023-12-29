@@ -417,3 +417,63 @@ fieldset {
 .project-set .img-fluid:hover {
   transform: scale(1.1);
 }
+
+/* BLOGS PAGE */
+
+section .hero-text-medium {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+.design h3 {
+  text-align: left;
+}
+.design-title {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+.design h5 {
+  padding-top: 2rem;
+  width: 70%;
+}
+
+section .container-fluid {
+  padding: 0 7rem;
+}
+
+.cards .row .col-lg-4 {
+  padding-bottom: 4rem;
+}
+
+.card {
+  border: 2px solid var(--black);
+  border-radius: 0;
+  gap: 1rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 6px 6px 0 0 var(--black);
+}
+
+.card-img,
+.card-img-top {
+  border-radius: 0;
+}
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.blog-link {
+  color: var(--black);
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.blog-link:hover {
+  color: #3278da;
+  opacity: 1;
+}
