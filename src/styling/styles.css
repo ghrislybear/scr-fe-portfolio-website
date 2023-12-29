@@ -546,3 +546,12 @@ section .container-fluid {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+.online-courses-workshops {
+  padding-bottom: 15rem;
+}
+
+.online-courses-workshops h5 {
+  padding-top: 2rem;
+  width: 70%;
+}

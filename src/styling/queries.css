@@ -314,6 +314,47 @@
   .cards > .row {
     row-gap: 1.2rem;
   }
+
+  /*Blogs Page*/
+
+  section .hero-text-medium {
+    padding-bottom: 4rem;
+  }
+
+  .design-title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+
+  .design h5 {
+    padding-top: 2rem;
+    width: 95%;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .blogs .card-text {
+    text-align: left;
+  }
+
+  .design .col-lg-4 {
+    padding-bottom: 2rem;
+  }
+
+  .online-courses-workshops {
+    padding-bottom: 10rem;
+  }
+
+  .online-courses-workshops .col-lg-4 {
+    padding-bottom: 2rem;
+  }
+
+  .online-courses-workshops h5 {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 360px) {
