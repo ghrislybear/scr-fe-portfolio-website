@@ -355,6 +355,11 @@
   .online-courses-workshops h5 {
     width: 90%;
   }
+
+  /* About Page */
+  .about-questions {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 360px) {

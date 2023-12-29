@@ -9,6 +9,8 @@
   --bs-emphasis-color-rgb: #bcb6ff;
   --text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
     rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  --bs-primary-bg-subtle: #8cffa5;
+  --bs-border-radius: 0;
 }
 
 body,
@@ -263,6 +265,38 @@ footer {
 
 /*ABOUT PAGE*/
 
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: transparent;
+  border: 1px solid var(--black);
+  box-shadow: 6px 6px 0 0 var(--black);
+}
+
+section .accordion {
+  background-color: var(--minor-btn-bg);
+}
+
+.about-questions {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.accordion-header .question {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.accordion-item .accordion-body {
+  padding: 2rem;
+}
+
+.about-cta {
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
 /*HERO SECTION*/
 .hero-heading {
   font-size: 9.4rem;
