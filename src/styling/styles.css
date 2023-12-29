@@ -471,10 +471,26 @@ section .container-fluid {
   text-transform: uppercase;
 }
 
+.card-text {
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  overflow: hidden;
+  max-height: 10rem;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  padding-right: 1rem;
+}
+
 .blog-link {
   color: var(--black);
   font-weight: 500;
   opacity: 0.7;
+  font-style: italic;
 }
 
 .blog-link:hover {
@@ -482,6 +498,51 @@ section .container-fluid {
   opacity: 1;
 }
 
-.testing {
-  background-color: red;
+.resources-mockup,
+.resources-task-mgnt,
+.resources-design-tool,
+.resources-illustration,
+.courses {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 0;
+  gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resources-mockup:hover,
+.resources-task-mgnt:hover,
+.resources-design-tool:hover,
+.resources-illustration:hover,
+.courses:hover {
+  box-shadow: 15px 10px 0 0 var(--black);
+  transform: translateY(-10px) translateX(-10px);
+}
+
+.resources-task-mgnt:hover,
+.resources-illustration:hover {
+  background-color: var(--secondary-color);
+}
+.resources-mockup:hover {
+  background-color: var(--primary-color);
+}
+.resources-design-tool:hover {
+  background-color: rgb(245, 156, 171);
+}
+
+.course-provider {
+  line-height: 2rem;
+}
+
+.udemy {
+  background-color: var(--secondary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.coursera {
+  background-color: #76b1ff;
+  font-weight: 600;
+  text-transform: uppercase;
 }
