@@ -7,8 +7,7 @@
   --white: #fbfffef8;
   --minor-btn-bg: #eaffee;
   --bs-emphasis-color-rgb: #bcb6ff;
-  --text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  --text-shadow: rgba(0, 0, 0, 1) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   --bs-primary-bg-subtle: #8cffa5;
   --bs-border-radius: 0;
 }
@@ -240,47 +239,43 @@ footer {
   justify-content: left;
   padding-bottom: 0;
 }
-
 .page-desc {
   text-align: left;
 }
-
-.social-links ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
+.col-sm-8 p {
+  padding-top: 0.7rem;
+  line-height: normal;
+  margin-bottom: 0;
 }
-
-.social-links li {
-  text-align: left;
-}
-
-.social-links li a {
-  color: #e8e9d9;
+.col-sm-8 ul {
   display: flex;
-  font-size: 1.2rem;
-  padding: 0;
-  text-shadow: 0px 2.857px 2.857px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  padding-left: 0;
+}
+.col-sm-8 ul li a {
+  color: var(--black);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+.social-links a:hover {
+  color: var(--secondary-color);
+  text-shadow: var(--text-shadow);
 }
 
 /*ABOUT PAGE*/
-
 .accordion {
   --bs-accordion-btn-focus-box-shadow: transparent;
   border: 1px solid var(--black);
   box-shadow: 6px 6px 0 0 var(--black);
 }
-
 section .accordion {
   background-color: var(--minor-btn-bg);
 }
-
 .about-questions {
   width: 70%;
   margin: 0 auto;
   padding-bottom: 5rem;
 }
-
 .accordion-header .question {
   font-size: 1.5rem;
   font-weight: 600;
@@ -288,15 +283,14 @@ section .accordion {
   padding: 1rem 0;
   text-align: left;
 }
-
 .accordion-item .accordion-body {
   padding: 2rem;
 }
-
 .about-cta {
   margin: 0 auto;
   padding-bottom: 10rem;
 }
+
 /*HERO SECTION*/
 .hero-heading {
   font-size: 9.4rem;
@@ -305,7 +299,6 @@ section .accordion {
   padding-top: 3rem;
   text-align: center;
 }
-
 .hero-text-medium {
   font-size: 1.5rem;
   padding: 5rem 8rem;
@@ -321,11 +314,9 @@ section .accordion {
   margin: 0 auto;
   position: relative;
 }
-
 .container-form {
   padding-top: 0;
 }
-
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -334,7 +325,6 @@ section .accordion {
 #contact button[type="submit"] {
   font: 400 1rem/1.2rem "Inria Sans", sans-serif;
 }
-
 #contact {
   background: var(--minor-btn-bg);
   border: 1px solid var(--black);
@@ -342,7 +332,6 @@ section .accordion {
   padding: 25px;
   margin: 0;
 }
-
 fieldset {
   border: medium none !important;
   margin: 0 0 10px;
@@ -350,7 +339,6 @@ fieldset {
   padding: 0;
   width: 100%;
 }
-
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -362,7 +350,6 @@ fieldset {
   margin: 0 0 0.3rem;
   padding: 0.9rem;
 }
-
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
@@ -373,13 +360,11 @@ fieldset {
   transition: border-color 0.3s ease-in-out;
   border: 1px solid var(--black);
 }
-
 #contact textarea {
   height: 100px;
   max-width: 100%;
   resize: none;
 }
-
 #contact button[type="submit"] {
   cursor: pointer;
   width: 100%;
@@ -391,18 +376,15 @@ fieldset {
   padding: 10px;
   font-size: 15px;
 }
-
 #contact button[type="submit"]:hover {
   background: var(--bs-emphasis-color-rgb);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
-
 #contact button[type="submit"]:active {
   box-shadow: none;
 }
-
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
@@ -420,7 +402,6 @@ fieldset {
 :-ms-input-placeholder {
   color: var(--black);
 }
-
 .note {
   width: 40rem;
   opacity: 70%;
@@ -428,7 +409,6 @@ fieldset {
 }
 
 /* PROJECTS PAGE */
-
 .project-set {
   padding-top: 0;
   padding-bottom: 5rem;
